@@ -1,94 +1,138 @@
-Учебный проект "landing-page"
+Foxtar market
 ================================
 
-### Используемые технологии
+### Используемые в проекте технологии 
 
-1. Фреймворк Bootstrap 3
-2. Библиотека JavaScript - jQuery для работы Bootstrap
+1. Сборщик проектов Gulp.js
+2. Библиотека JavaScript - jQuery
 
-### Используемые шрифты и иконки
+### Плагины
 
-1. Dosis light, regular, Open Sans regular
-2. Font-Awesome, Et-line - иконочные шрифты 
+1. slick-slider - стилизация карусели
+2. slick-nav - стилизация мобильного меню
+3. form-stayler - стилизация элементов форм
+4. price-range - стилизация фильтра цены
+5. datepicker - стилизация календаря
+
+
+
+### Шрифты и иконки
+
+1. Font-Awesome - иконочный шрифт 
+2. Шрифты: 
+- Roboto: 400,500,700
+- Open Sans: 600,800
+- Raleway: 700
+- Lato: 700
+- Myriad Pro
 
 ### Стандартные компоненты и классы
 
 ***Компоненты***
-1. Задаем отступы внутри блока:
+1. Стилизируем заголовки:
 ```
-    .default-section - стандартная секция
-    .small-section - переопеделяем отступ внутри секции
+    .title 
+    .title.small-size-title
+    .title.medium-size-title
+    .title-block
+    .text-regular
+    .text-medium
+    .text-bold
+
 ```
-2. Задаем стили шапке и меню
+2. Стандартные кнопки:
 ```
-    .header - шапка
-    .header-nav - меню
-    .header .navbar-toggle - мобильное меню
-    .header .navbar-toggle .icon-bar - цвет бургер кнопки
-    .logo - логотип
+    .btn
+    .btn-big
+    .btn-mid
+    .btn-less-than-average
+    .btn-small
+    .btn-xs
+    .btn-registry
+    .btn-items
+
+```    
+3. Отступы между стандартными блоками:
 ```
-3. Стилизируем иконки
+    .default-section
+
 ```
-    .rhomb-icon - ромб содержащий внутри иконку Font-Awesome
-    .rhomb-icon.black-icon - цвет ромба и иконки внутри
-    .rhomb-icon.white-icon 
-    .rhomb-icon.transparent-icon 
+4. Стилизируем стандартную текстовую информацию:
 ```
-4. Стилизируем заголовки:
-```
-    .title - стандартный заголовок
-    .title.light - переопределяем жирность и отступ между буквами заголовка
-    .title.small-title - переопределяем размер шрифта, отступ между буквами заголовка
-    .title.less-margin - переопрделяем отступ заголовка
-```
-5. Стилизируем текст и цитаты:
-```
-    .default-text - стандартный текст
-    blockquote - стиль цитаты
-    blockquote span
-```
-6. Навигационные стили для вкладок
-```
-    .nav-tabs
-    .nav-tabs > li
-    .nav > li > a
-    .nav-tabs > li > a
-```
-7. Стилизируем стандартные кнопки:
-```
-    .btn - стандартные стили кнопки
-    .btn.btn-default - цвет кнопки
-    .btn.btn-darkgrey
-    .btn.btn-black
-    .btn.btn-xs - переопределяем отступы внутри кнопки и размер текста 
-    .btn.btn-md
-```
-8. Стилизируем дефолтные формы и элементы форм:
-```
-    .form-control
-    textarea.form-control
+    .text-default
 ```
 
 ***Классы***
-1. Задаем цвет:
+1. Создаем флекс контейнеры
 ```
-    .bg-black
-    .bg-grey
+    .d-flex
+```
+2. Выравнивание элементов по горизонтали и вертикали:
+```
+    .justify-content-start
+    .justify-content-end
+    .justify-content-center
+    .justify-content-between
+    .justify-content-around
+    .align-items-start
+    .align-items-end
+    .align-items-center
+    .align-items-baseline
+    .align-items-stretch
+    .text-center
+```
+3. Цвет для текста:
+```
     .text-white
+    .text-off-white
+    .text-dark
+    .text-black
+    .text-red
+    .text-green
+    .text-blue
+    .text-gray
+
+```
+4. Цвет для фона:
+```
+    .bg-white
+    .bg-dark
+    .bg-light-grey
+    .bg-green
+    .bg-red
+    .bg-orange
+    .bg-light-orange
+
+```
+5. Стилизируем карточки товаров:
+```
+    .card.large-card
+    .card.medium-card
+    .card.row-card
+    .card.small-card
 ```
 ---
 
-### Контрольные точки media-запросов
-
-1. @media (max-width: 1199px) - устройства c разрешением до 1199px
-2. @media (max-width: 991px) - устройства c разрешением до 991px
-3. @media (max-width: 767px) - устройства c разрешением до 767px
-4. @media (max-width: 599px) - мобильные устройства c разрешением до 599px
-5. @media (max-width: 479px) - мобильные устройства c разрешением до 479px
+***Основные контрольные точки media-запросов***
+```
+@media (max-width: 1199px) - устройства c разрешением до 1199px
+@media (max-width: 991px) - устройства c разрешением до 991px
+@media (max-width: 767px) - устройства c разрешением до 767px
+@media (max-width: 599px) - мобильные устройства c разрешением до 599px
+@media (max-width: 479px) - мобильные устройства c разрешением до 479px
+```
 ---
 
-Название файла  | Содержание файла
+**Структура папок**
+
+Название папок  | Содержание файла
 ----------------|----------------------
-style.css       | Файл каскадной таблицы стилей, содержит стили
-script.js       | Файл содержащий скрипт плавного скроллинга страницы  
-index.html      | Индексный файл содержащий разметку
+app             | Директория с готовым проектом
+app/css         | Готовые стили к продакшену
+app/js          | Готовый js к продакшену
+app/img         | Готовые картинки к продакшену
+app/fonts       | Шрифты
+src             | Директория с исходными файлыми
+src/css         | Исходные стили, которые будут конвертироваться в app/css
+
+---
